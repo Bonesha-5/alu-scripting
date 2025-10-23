@@ -17,7 +17,7 @@ def number_of_subscribers(subreddit):
         int: Number of subscribers, 0 if invalid subreddit
     """
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    headers = {'User-Agent': 'alu-scripting-api-advanced'}
+    headers = {'User-Agent': 'kevine-scripting-api-advanced'}
 
     response = requests.get(url, headers=headers, allow_redirects=False)
 
